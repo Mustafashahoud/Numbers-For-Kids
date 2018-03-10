@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mustafa.numberforkids.MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageCard"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/_logooo"
+            android:id="@+id/mainView"
+            android:layout_gravity="center" />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_below="@+id/imageCard"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Start Game"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/youtube1"
+        android:layout_below="@+id/btn1"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Learn Now"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/youtube1"
+        android:layout_below="@+id/youtube1"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Exit"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    <Button
+        android:id="@+id/infoBtn"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/info"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:alpha="0"
+        android:max="8"
+        android:progress="0"
+        android:layout_alignEnd="@+id/imageCard" />
+
+    <TextView
+        android:text="0/0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answersView"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/youtube1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2"
+        android:layout_centerHorizontal="true"
+        android:text="Youtube"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+
+</RelativeLayout>
